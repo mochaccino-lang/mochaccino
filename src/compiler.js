@@ -2,7 +2,7 @@ let modules = "";
 process.argv.length < 3 && (console.log("You have to put the name of your file after the first word, silly!"), process.exit(1));
 var fs = require("fs");
 
-function characterspecific(e) {
+function compilebasically(e) {
     this.string = e;
     this.new = this.string.replace(/_toy_/g, "+=");
     this.new = this.new.replace(/_take_/g, "-=");
@@ -31,7 +31,7 @@ function characterspecific(e) {
     return this.new;
 }
 filename = process.argv[2] + ".mochaccino", filecontents = "", filecontents = fs.readFileSync(filename, "utf8"), filecontents = filecontents.split(" "), filecontents = filecontents.join("_");
-let processed = characterspecific(filecontents),
+let processed = compilebasically(filecontents),
     final = modules + "\n" + (processed = processed.replace(/\_/g, " "));
 fs.writeFile(process.argv[2] + ".mocha", final, function() {
     console.log("Your File is Done Compiling!"), console.log("Run Your File With ./" + process.argv[2].toString() + ".mocha")
