@@ -34,13 +34,10 @@ filename = process.argv[2] + ".mochaccino", filecontents = "", filecontents = fs
 let processed = characterspecific(filecontents),
     final = modules + "\n" + (processed = processed.replace(/\_/g, " "));
 fs.writeFile(process.argv[2] + ".mocha", final, function() {
-    // console.log("Your File is Done Compiling!"), console.log("Run Your File With ./" + process.argv[2].toString() + ".mocha")
+    console.log("Your File is Done Compiling!"), console.log("Run Your File With ./" + process.argv[2].toString() + ".mocha")
 });
 var sys = require("util"),
     exec = require("child_process").exec;
 exec("dos2unix " + process.argv[2].toString() + ".mocha", function(e, s, i) {
     e && (console.log(e.code), console.log("You may have to install dos2unix with: apt-get install dos2unix"));
-});
-exec("./" + process.argv[2].toString() + ".mocha", function(e, s, i) {
-    e && (console.log(e.code), console.log("ur thing didn't work dumbo"));
 });
