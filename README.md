@@ -1,3 +1,3 @@
-# Docs
-1. [Installation](docs/Installation.md) <br>
-2. [Compiling](docs/compiling.md)
+# Mochaccino
+---
+Docs found at [mochaccino.github.io](https://mochaccino-lang.github.io/)
