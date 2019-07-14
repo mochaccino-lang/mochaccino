@@ -1,12 +1,14 @@
 # How to Install Mochaccino
 ---
 ### Requirements: <br />
+---
 1.  Linux terminal in windows (this was made with the ubuntu terminal), <br />
 1.  Linux subsystem for windows turned on, <br />
 1.  dos2unix (`apt-get install dos2unix`), <br />
 1.  nodejs (`apt-get install nodejs`), <br />
----
+
 ### Installation
+---
 * First, cd into the disk you want to install on (for most it's c) <br />
 cd /mnt/c/ <br />
 * Next, make the source for Mochaccino <br />
