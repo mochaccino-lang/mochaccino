@@ -1,1 +1,1 @@
-All instructions for instalation and docs are in the [wiki](https://github.com/mochaccino-lang/mochaccino/wiki)
+All instructions for instalation and docs are in the [wiki](docs/main.md)
