@@ -1,3 +1,3 @@
 # Mochaccino
 ---
-Docs found at [mochaccino.github.io](https://mochaccino-lang.github.io/)
+Start here: [mochaccino.github.io](https://mochaccino-lang.github.io/Installation/)
