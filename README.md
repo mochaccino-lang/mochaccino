@@ -1,1 +1,3 @@
-All instructions for instalation and docs are in the [wiki](docs/main.md)
+# Docs
+1. [Installation](docs/Installation) <br>
+2. [Compiling](docs/Compiling)
